@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.main_box {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./photo.jpg");
+  background-size: cover;
+}
+
+/* ###################################### LOGO ################################################## */
+.heading {
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.heading h1{
+    display: flex;
+    font-family: inherit;
+    font-size: 4rem;
+}
+.heading p{
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin-top: -10px;
+}
+.heading span {
+    font-family: inherit;
+    color: #ef0077;
+
+}
+.heading svg {
+  height: 4rem;
+  fill: #ef0077;
+}
+
+/* ###################################################3 LOGO END ######################################## */
+
+.btn_one i {
+  opacity: 1;
+  color: #fff;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  transition: all 0.25s ease-in;
+}
+.btn_one i:hover {
+  font-size: 1.6rem;
+}
+
+.btn_two i {
+  color: #fff;
+  position: absolute;
+  left: 260px;
+  font-size: 1.3rem;
+  transition: all 0.25s ease-in;
+  top: 30px;
+  line-height: 1.4rem;
+}
+.btn_two i:hover {
+  font-size: 1.4rem;
+}
+
+.sidebar_menu {
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 1px 0 5px #bababa;
+  position: fixed;
+  top: 0px;
+  left: -500px;
+  transition: all 0.5s linear;
+}
+
+i,
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo {
+  width: 100%;
+  font-size: 1.4rem;
+  position: absolute;
+  box-shadow: 1px 0 5px #bababa;
+  padding: 20px;
+}
+.menu ul {
+  width: 100%;
+  position: absolute;
+  top: 75px;
+  list-style-type: none;
+}
+.menu li {
+  padding: 20px;
+  width: 100%;
+}
+.menu li:hover {
+  cursor: pointer;
+  box-shadow: 1px 0 5px #bababa;
+}
+.menu ul i {
+  padding-right: 8px;
+}
+.social_media ul {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 70px;
+}
+.social_media i {
+  font-size: 1.2rem;
+  padding-right: 20px;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+.social_media i:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .btn_one {
+  opacity: 0;
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
